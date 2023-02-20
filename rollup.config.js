@@ -1,11 +1,11 @@
 import { terser } from "rollup-plugin-terser";
 
 export default {
-  input: "dist/index.js",
+  input: "src/index.js",
   output: {
-    file: "dist/really-big-bundle.js",
-    format: "umd",
-    name: "ows"
+    file: "dist/ows.js",
+    format: "esm",
+    name: "ows-js"
   },
   plugins: [
     terser({

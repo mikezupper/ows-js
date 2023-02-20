@@ -1,9 +1,9 @@
 # Observables with Streams
 
-A library for observables built with [WHATWG streams](https://streams.spec.whatwg.org). This library is inspired by [ReactiveX’s operators](http://reactivex.io/documentation/operators.html) and implements a subset of them using [streams](https://streams.spec.whatwg.org).
+A library for observables built with streams. This library is inspired by [ReactiveX’s operators](http://reactivex.io/documentation/operators.html) and implements a subset of them using streams.
 
 ```
-npm install --save observables-with-streams
+npm install --save ows-js
 ```
 
 The goal of this library is to implement observables making as much use of the platform as possible and being highly tree-shakeable.
@@ -20,7 +20,7 @@ The goal of this library is to implement observables making as much use of the p
 <button id="inc">+</button>
 
 <script type="module">
-  import * as ows from "observables-with-streams";
+  import * as ows from "ows-js";
 
   ows.merge(
     ows.fromEvent(
@@ -45,13 +45,9 @@ The goal of this library is to implement observables making as much use of the p
 
 ## Documentation
 
-The (somewhat lacking) documentation for this library is hosted at https://observables-with-streams.surma.technology
-
 ## Caveats
 
-While most browsers have [partial support of streams](https://caniuse.com/#feat=streams) in stable, this library makes heavy use of [TransformStreams](https://streams.spec.whatwg.org/#ts-model), which are currently not well supported. Until browsers catch up, I can recommend [Mattias Buelens'](https://twitter.com/MattiasBuelens) [web-streams-polyfill](https://npm.im/web-streams-polyfill).
-
-For a good primer about streams, read this [blog post](https://jakearchibald.com/2016/streams-ftw/) by [Jake Archibald](https://twitter.com/jaffathecake/) (he is aware the title hasn’t aged well).
+While most browsers have [partial support of streams](https://caniuse.com/#feat=streams) in stable, this library makes heavy use of TransformStreams.
 
 ---
 
