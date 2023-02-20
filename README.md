@@ -20,7 +20,7 @@ The goal of this library is to implement observables making as much use of the p
 <button id="inc">+</button>
 
 <script type="module">
-  import * as ows from "ows-js";
+    import * as ows from "https://cdn.jsdelivr.net/npm/ows-js/dist/ows.js";
 
   ows.merge(
     ows.fromEvent(

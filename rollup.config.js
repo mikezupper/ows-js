@@ -10,7 +10,8 @@ export default {
   plugins: [
     terser({
       mangle: true,
-      compress: true
+      compress: true,
+      module: true
     })
   ]
 };

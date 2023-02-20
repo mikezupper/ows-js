@@ -1,3 +1,5 @@
+import { discard } from "./discard.js";
+
 /**
  * Alias for {@link discard}.
  */
